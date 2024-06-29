@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Client's Web Page</title>
+  <script type="text/javascript">
+    function sendMessageToFlutter(message) {
+      Toaster.postMessage(message);
+    }
+  </script>
+</head>
+<body>
+  <h1>Welcome to the Client's Web Page</h1>
+  <button onclick="sendMessageToFlutter('saving_scheme')">Saving Scheme</button>
+  <button onclick="sendMessageToFlutter('other_feature')">Other Feature</button>
+  <!-- Add more buttons as needed -->
+</body>
+</html>
