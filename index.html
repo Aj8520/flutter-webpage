@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Client's Web Page</title>
+  <title>WebView Test</title>
   <script type="text/javascript">
-    function sendMessageToFlutter(message) {
-      Toaster.postMessage(message);
+    function navigateToScheme() {
+      Toaster.postMessage('navigateScheme');
+    }
+    function navigateToBankDetails() {
+      Toaster.postMessage('navigateBankDetails');
+    }
+    function navigateToKyc() {
+      Toaster.postMessage('navigateKyc');
+    }
+    function navigateToRate() {
+      Toaster.postMessage('navigateRate');
+    }
+    function navigateToInstallmentRecords() {
+      Toaster.postMessage('navigateInstallmentRecords');
+    }
+    function navigateToCustomerCard() {
+      Toaster.postMessage('navigateCustomerCard');
     }
   </script>
 </head>
 <body>
-  <h1>Welcome to the Client's Web Page</h1>
-  <button onclick="sendMessageToFlutter('saving_scheme')">Saving Scheme</button>
-  <button onclick="sendMessageToFlutter('other_feature')">Other Feature</button>
-  <!-- Add more buttons as needed -->
+  <button onclick="navigateToScheme()">Navigate to Scheme</button>
+  <button onclick="navigateToBankDetails()">Navigate to Bank Details</button>
+  <button onclick="navigateToKyc()">Navigate to KYC</button>
+  <button onclick="navigateToRate()">Navigate to Rate</button>
+  <button onclick="navigateToInstallmentRecords()">Navigate to Installment Records</button>
+  <button onclick="navigateToCustomerCard()">Navigate to Customer Card</button>
 </body>
 </html>
+
