@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Jewello Acme</title>
+  <title>Jewello Webpage Demo</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -14,14 +14,26 @@
       min-height: 100vh;
       background-color: #f4f4f4;
     }
+    .header {
+      margin: 20px 0;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 2em;
+      color: #333;
+    }
     .banner {
       width: 100%;
       max-width: 1200px;
       margin: 20px 0;
     }
+    .banner a {
+      display: block;
+    }
     .banner img {
       width: 100%;
-      height: auto;
+      height: 300px;
+      object-fit: cover;
     }
     .button-container {
       display: flex;
@@ -77,30 +89,33 @@
   </script>
 </head>
 <body>
+  <div class="header">
+    <h1>Jewello App Demo</h1>
+  </div>
   <div class="banner">
-    <img src="https://via.placeholder.com/1200x300?text=Advertisement+Banner" alt="Advertisement Banner">
+    <a href="https://example.com" target="_blank">
+      <img src="https://picsum.photos/seed/picsum/1200/300" alt="Advertisement Banner">
+    </a>
   </div>
   <div class="button-container">
     <button class="button" onclick="navigateToScheme()">
-      <span class="button-icon">&#x1F4C4;</span> Navigate to Scheme
+      <span class="button-icon">&#x1F4C4;</span> Saving Scheme
     </button>
     <button class="button" onclick="navigateToBankDetails()">
-      <span class="button-icon">&#x1F4B0;</span> Navigate to Bank Details
+      <span class="button-icon">&#x1F4B0;</span> Bank Details
     </button>
     <button class="button" onclick="navigateToKyc()">
-      <span class="button-icon">&#x1F4DD;</span> Navigate to KYC
+      <span class="button-icon">&#x1F4DD;</span>  KYC
     </button>
     <button class="button" onclick="navigateToRate()">
-      <span class="button-icon">&#x1F4C8;</span> Navigate to Rate
+      <span class="button-icon">&#x1F4C8;</span>  Rate
     </button>
     <button class="button" onclick="navigateToInstallmentRecords()">
-      <span class="button-icon">&#x1F4CA;</span> Navigate to Installment Records
+      <span class="button-icon">&#x1F4CA;</span>  Installment Records
     </button>
     <button class="button" onclick="navigateToCustomerCard()">
-      <span class="button-icon">&#x1F4B3;</span> Navigate to Customer Card
+      <span class="button-icon">&#x1F4B3;</span>  Customer Card
     </button>
   </div>
 </body>
 </html>
-
-
