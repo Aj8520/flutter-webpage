@@ -1,7 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WebView Test</title>
+  <title>Jewello Acme</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #f4f4f4;
+    }
+    .banner {
+      width: 100%;
+      max-width: 1200px;
+      margin: 20px 0;
+    }
+    .banner img {
+      width: 100%;
+      height: auto;
+    }
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .button {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      margin: 5px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+    .button-icon {
+      margin-right: 10px;
+      font-size: 1.2em;
+    }
+    @media (max-width: 600px) {
+      .button {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
   <script type="text/javascript">
     function navigateToScheme() {
       Toaster.postMessage('navigateScheme');
@@ -24,12 +77,30 @@
   </script>
 </head>
 <body>
-  <button onclick="navigateToScheme()">Navigate to Scheme</button>
-  <button onclick="navigateToBankDetails()">Navigate to Bank Details</button>
-  <button onclick="navigateToKyc()">Navigate to KYC</button>
-  <button onclick="navigateToRate()">Navigate to Rate</button>
-  <button onclick="navigateToInstallmentRecords()">Navigate to Installment Records</button>
-  <button onclick="navigateToCustomerCard()">Navigate to Customer Card</button>
+  <div class="banner">
+    <img src="https://via.placeholder.com/1200x300?text=Advertisement+Banner" alt="Advertisement Banner">
+  </div>
+  <div class="button-container">
+    <button class="button" onclick="navigateToScheme()">
+      <span class="button-icon">&#x1F4C4;</span> Navigate to Scheme
+    </button>
+    <button class="button" onclick="navigateToBankDetails()">
+      <span class="button-icon">&#x1F4B0;</span> Navigate to Bank Details
+    </button>
+    <button class="button" onclick="navigateToKyc()">
+      <span class="button-icon">&#x1F4DD;</span> Navigate to KYC
+    </button>
+    <button class="button" onclick="navigateToRate()">
+      <span class="button-icon">&#x1F4C8;</span> Navigate to Rate
+    </button>
+    <button class="button" onclick="navigateToInstallmentRecords()">
+      <span class="button-icon">&#x1F4CA;</span> Navigate to Installment Records
+    </button>
+    <button class="button" onclick="navigateToCustomerCard()">
+      <span class="button-icon">&#x1F4B3;</span> Navigate to Customer Card
+    </button>
+  </div>
 </body>
 </html>
+
 
