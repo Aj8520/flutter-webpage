@@ -50,10 +50,11 @@ function navigateToScheme() {
     Toaster.postMessage('navigateToSetting');
   }
 
-
-  function setUserName(name) {
-    document.getElementById("username").innerText = "Welcome, " + name;
+  function setUserName(username) {
+    // Find the element by ID and set the text content
+    document.getElementById("user-name-display").innerText = "Welcome, " + username;
 }
+
 
 
 
