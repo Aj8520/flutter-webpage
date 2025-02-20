@@ -51,6 +51,11 @@ function navigateToScheme() {
   }
 
 
+  function setUserName(name) {
+    document.getElementById("username").innerText = "Welcome, " + name;
+}
+
+
 
 
 
